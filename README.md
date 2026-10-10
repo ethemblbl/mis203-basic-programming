@@ -38,7 +38,7 @@ Why does the order of the rules matter?: Python'daki if/elif yapısı, doğru bu
 # Week04
 ## Surprise Mind Reader
 
-AI Tool: Claude. Gemini
+AI Tools: Claude. Gemini
 
 A fun Python terminal project that starts with a fake crash prank and ends with a cool mind-reading trick using binary numbers.
 
