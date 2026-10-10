@@ -35,3 +35,30 @@ Input: Name: Deniz, Age: 150
 Result: Invalid age.
 Why does the order of the rules matter?: Python'daki if/elif yapısı, doğru bulduğu ilk koşula girer ve geri kalan koşulları atlar. Eğer Öğrenci kuralını (%30 indirim) Çocuk kuralından (%40 indirim) önce yazsaydık, 10 yaşındaki öğrenci bir müşteri, hakkı olan çocuk indirimini alamadan sadece %30 öğrenci indirimiyle bilet alırdı. Bu yüzden müşterinin faydasına olan ve öncelikli kurallar her zaman en üste yazılmalıdır.
 
+# Week04
+## Surprise Mind Reader
+
+A fun Python terminal project that starts with a fake crash prank and ends with a cool mind-reading trick using binary numbers.
+
+##  What is this?
+
+This is a small console project I built with two main parts:
+
+1. **The Fake Crash:** It pretends to run into system errors, shows a fake progress bar deleting `homework.py`, and does a shutdown countdown to scare the user a bit (just text, nothing actually gets deleted!).
+2. **The Mind Reader:** It asks the user to pick a number between 1 and 63. After showing 6 different cards and asking if the number is on them, the program guesses the exact number.
+
+##  How does it work?
+
+It's not magic, it's just binary numbers!
+
+- Any number from 1 to 63 can be written in binary using 6 bits: 1, 2, 4, 8, 16, and 32.
+- Each card shows numbers that have a specific bit turned on.
+- When you answer "yes", the program simply adds the first number of that card (1, 2, 4, 8, 16, or 32) together.
+- The cards are shuffled randomly so it feels more like magic.
+
+##  Features
+
+- Typewriter-like text effect (`slow_print`).
+- Screen clearing that works on both Windows and Mac/Linux.
+- Handles user inputs so only valid answers (`yes` or `no`) work.
+- Built only with Python's built-in libraries (`os`, `random`, `time`) — no external packages needed.
