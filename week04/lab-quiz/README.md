@@ -1,5 +1,7 @@
 # Lab 04: Savings Goal Planner
 
+AI Tools: Claude and Gemini
+
 A Python simulation tool that calculates month-by-month compound savings growth with periodic monthly deposits and interest until a defined financial goal is met (or until reaching the 60-month cap).
 
 ---
