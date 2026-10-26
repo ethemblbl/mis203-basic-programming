@@ -66,3 +66,19 @@ It's not magic, it's just binary numbers!
 - Built only with Python's built-in libraries (`os`, `random`, `time`) — no external packages needed.
 
 # Week05
+
+# Lab 05 - Reusable Shipping Quote
+
+Bu modül, sipariş kalemlerine göre ara toplam, indirim oranı, kargo ücreti ve nihai toplamı hesaplayan bağımsız fonksiyonları içerir.
+
+## Test and Revision
+
+- **Test Run:** 
+  Ücretsiz kargo eşiği için tam sınır olan `150.0 TL` değeri test edildi (`assert calculate_shipping_fee(150.0) == 0.0`).
+- **Change After Testing:** 
+  İlk mantık kurgusunda `discounted_amount > FREE_SHIPPING_THRESHOLD` kullanılmıştı ve tam `150.0 TL` olan siparişlere hatalı şekilde kargo ücreti yansıtılıyordu. Test sonrasında operatör `>=` olarak güncellendi; böylece tam 150 TL tutarındaki siparişlerde kargonun doğru şekilde ücretsiz (`0.0 TL`) çıkması sağlandı.
+
+## print vs. return
+
+- **return:** Fonksiyonun ürettiği sonucu belleğe geri verir; dönen değer başka bir değişkene atanabilir, zincirleme başka fonksiyonlara parametre olarak aktarılabilir veya `assert` ifadeleriyle doğrulanabilir.
+- **print:** Değeri yalnızca terminale/ekrana metin olarak yazdırır. Fonksiyonun sonucunu `None` bırakır, dolayısıyla program içindeki diğer hesaplamalarda veri olarak kullanılamaz.
