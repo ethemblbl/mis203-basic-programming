@@ -64,3 +64,5 @@ It's not magic, it's just binary numbers!
 - Screen clearing that works on both Windows and Mac/Linux.
 - Handles user inputs so only valid answers (`yes` or `no`) work.
 - Built only with Python's built-in libraries (`os`, `random`, `time`) — no external packages needed.
+
+# Week05
